@@ -79,9 +79,9 @@ def simple_api_spec_dir():
     return FIXTURES_FOLDER / 'simple'
 
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def sanic_api_spec_dir():
-    return FIXTURES_FOLDER / 'simple'
+    return FIXTURES_FOLDER / 'sanic'
 
 
 @pytest.fixture(scope='session')
